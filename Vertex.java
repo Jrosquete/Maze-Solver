@@ -50,6 +50,7 @@ public class Vertex {
   private boolean end = false;
   private int x;
   private int y;
+  private int distance = Integer.MAX_VALUE;
 
   public Vertex(int x, int y, String label){
     this.x = x;
@@ -119,4 +120,14 @@ public class Vertex {
   public boolean isEnd(){
     return end;
   }
+  public int getDistance() {
+    return distance;
 }
+
+public void setDistance(int distance) {
+    this.distance = distance;
+}
+
+
+}
+
